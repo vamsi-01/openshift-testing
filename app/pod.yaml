@@ -6,3 +6,8 @@ spec:
     containers:
       - name: web
         image: quay.io/centos7/httpd-24-centos7
+        resources: 
+           requests:
+              memory: "500Mi"
+           limits:
+              memory: "1024Mi"
