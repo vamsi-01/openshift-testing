@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: argo-test-pod-2
+spec:
+    containers:
+      - name: web
+        image: registry.access.redhat.com/ubi9/httpd-24
+        resources: 
+           requests:
+              memory: "500Mi"
+           limits:
+              memory: "1024Mi"
